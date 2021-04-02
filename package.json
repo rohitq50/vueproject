@@ -1,5 +1,5 @@
 {
-  "name": "vueproject",
+  "name": "rohit_portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -30,6 +30,7 @@
     "css-loader": "^5.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "filemanager-webpack-plugin": "^4.0.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
