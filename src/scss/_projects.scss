@@ -2,15 +2,15 @@
 	padding-bottom: 2rem;
 
 	&__bio-image {
-		height: 30vh;
+		height: 40vh;
 		width: 100%;
 		background:
 			linear-gradient(
 				to right,
-				rgba($primary-color, 0.9),
-				rgba($secondary-color, 0.3)
+				rgba($primary-color, 0.4),
+				rgba($secondary-color, 0.1)
 			),
-			url('../assets/img/model-1.jpg') center top;
+			url('../assets/img/project.jpg') center;
 		background-size: cover;
 		display: flex;
 		flex-direction: column;
@@ -81,14 +81,5 @@
 		&:hover{
 			color: set-text-color(set-text-color($secondary-color));
 		}
-	}
-	.social-icons {
-		display: flex;
-		flex-direction: column;
-	}
-	footer {
-		transform:
-			rotate(90deg)
-			translate(-3rem, -5rem)
 	}
 }

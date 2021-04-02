@@ -5,8 +5,8 @@
 				<h2 class="text-secondary">BIO</h2>
 				<p>I am from Ghazipur, Uttar Pradesh and currently live in Bangalore
 					where I am working as a Full-stack Developer at Edmingle.
-					I have 2+ months of experience with Vue Js, HTML, Sass with a focus on Front-end.
-					In my spare time, I listen musics and videos on new technical things.
+					I have 14+ months of experience with PHP, Vue Js, Javascipt, ES6, HTML5, Sass.
+					In my spare time, I listen musics and play cricket.
 				</p>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 			<h2>Skills</h2>
 			<div class="jobs__job">
 				<ul>
-					<li><span class="text-color"><b>Programming Language :</b></span> Java, JavaScript, HTML, CSS and Sass</li>
+					<li><span class="text-color"><b>Programming Language :</b></span> C, PHP, Java, Nodejs, JavaScript, ES6, HTML5, CSS3 and Sass</li>
 					<li><span class="text-color"><b>Operating Systems :</b></span> Linux & Windows</li>
 					<li><span class="text-color"><b>Database :</b></span> MySQL</li>
 					<li><span class="text-color"><b>Frameworks and tools :</b></span> IntelliJ IDEA, ,Vue Js, React Js, VS Code, Chrome and Vue development Tools </li>
@@ -31,39 +31,27 @@
 			<div class="jobs__job">
 				<h2 class="text-secondary">Dec 5 2019- Curent</h2>
 				<h3>Edmingle</h3>
-				<h6>Full Stack Developer</h6>
+				<h4>Full Stack Developer</h4>
 				<p>Working as a full stack Developer in a Project where
 					the goal is to dilivered good quality products to our customers.</p>
 			</div>
 			<div class="jobs__job">
-				<h2 class="text-secondary">Aug 10 2019- Curent</h2>
+				<h2 class="text-secondary">Aug 10 2019- Dec 4 2019</h2>
 				<h3>Redyhire</h3>
-				<h6>Front-End Developer intern(Work From Home)</h6>
+				<h4>Front-End Developer (intern)</h4>
 				<p>Working as a Frontend Developer in a Project where the mission is to simplify end to end recruitment
 					process. The only goal is to reduce amount of effort, time and cost from hiring Process.</p>
 			</div>
 		</div>
-		<div class="social-icons">
-		<a href="https://twitter.com/Rohitq50">
-			<i class="fab fa-twitter fa-2x"></i>
-		</a>
-		<a href="https://www.facebook.com/rohitsenq50">
-			<i class="fab fa-facebook fa-2x"></i>
-		</a>
-		<a href="https://www.instagram.com/rohitq50/">
-			<i class="fab fa-instagram fa-2x"></i>
-		</a>
-		<a href="https://www.linkedin.com/in/rohitq50/">
-			<i class="fab fa-linkedin fa-2x"></i>
-		</a>
-		</div>
-		<footer>&copy;Copyright 2019</footer>
 	</section>
 </template>
 
 <script>
 export default {
 	name: 'MyDetails',
+	created() {
+		this.$emit('setVertical', true)
+	}
 }
 </script>
 

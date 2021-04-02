@@ -8,10 +8,10 @@
 	background:
 	  linear-gradient(
 		to right,
-		rgba($primary-color, 0.9),
-		rgba($primary-color, 0.3)
+		rgba($primary-color, 0.5),
+		rgba($primary-color, 0.1)
 	  ),
-	  url('../assets/img/model-1.jpg') center top;
+	  url('../assets/img/model-3.jpg') center;
 	background-size: cover;
 
 	h2 {
@@ -25,10 +25,5 @@
 	  grid-gap: 2rem;
 	  text-align: center;
 	  font-size: 1.5rem;
-	}
-
-	.social-icons {
-	  position: initial;
-	  margin-top: 2rem;
 	}
 }

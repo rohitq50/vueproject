@@ -35,7 +35,7 @@ export default {
 		}
 	},
 	created() {
-		this.navigate(this.activePath)
+		this.navigate(window.location.pathname)
 	},
 	methods: {
 		navigate(path) {
