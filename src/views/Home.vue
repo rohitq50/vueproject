@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<BasicInfo msg="Welcome to Your Vue.js App"/>
+		<BasicInfo :personalInfo="personalInfo" :workInfo="workInfo"/>
 	</main>
 </template>
 
@@ -10,8 +10,15 @@ import BasicInfo from '@/components/BasicInfo.vue'
 
 export default {
 	name: 'Home',
+	inject: ['myInfo'],
 	components: {
 		BasicInfo
+	},
+	data() {
+		return {
+			personalInfo: this.myInfo.personal_info,
+			workInfo: this.myInfo.work_info
+		}
 	}
 }
 </script>

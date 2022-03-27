@@ -14,7 +14,7 @@
 				<i class="fab fa-linkedin fa-2x"></i>
 			</a>
 		</div>
-		<div :class="vertical ? 'vertical' : ''">&copy;Copyright 2021</div>
+		<div :class="vertical ? 'vertical' : ''">&copy;Copyright 2022</div>
 	</footer>
 </template>
 

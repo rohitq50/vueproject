@@ -5,15 +5,15 @@
 		<div class="contact__list">
 			<div class="contact__email">
 				<i class="fas fa-envelope"></i> Email
-				<div class="text-secondary">rohitq50@gmail.com</div>
+				<div class="text-secondary">{{personalInfo.email}}</div>
 			</div>
 			<div class="contact__phone">
 				<i class="fas fa-mobile-alt"></i> Phone
-				<div class="text-secondary">+919557845833</div>
+				<div class="text-secondary">{{personalInfo.contact_number}}</div>
 			</div>
 			<div class="contact__address">
-				<i class="fas fa-map-marker-alt"></i> Address
-				<div class="text-secondary">Lane no 3 Vaishnavi Vihar Colony, Lanka, Varanasi, Uttar Pradesh, India</div>
+				<i class="fas fa-map-marker-alt"></i> Location
+				<div class="text-secondary">{{personalInfo.address}}</div>
 			</div>
 		</div>
 	</section>
@@ -22,6 +22,7 @@
 <script>
 export default {
 	name: 'MyContact',
+	props: ["personalInfo"]
 }
 </script>
 

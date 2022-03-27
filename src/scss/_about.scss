@@ -41,15 +41,8 @@
 			padding: 0.5rem;
 			border-bottom: 5px solid $secondary-color;
 
-			ul {
-				list-style-type: none;
-
-				li {
-					margin-bottom: .5rem;
-					.text-color {
-						color: $secondary-color;
-					}
-				}
+			li {
+				margin-bottom: .5rem;
 			}
 
 			h2, h3 {
@@ -57,6 +50,17 @@
 			}
 			h6 {
 				margin: 0.3rem;
+			}
+		}
+	}
+	.remove_ul {
+		ul {
+			list-style-type: none;
+			li {
+				margin-bottom: .5rem;
+				.text-color {
+					color: $secondary-color;
+				}
 			}
 		}
 	}

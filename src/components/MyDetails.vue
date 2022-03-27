@@ -3,44 +3,39 @@
 		<div class="about__bio-image">
 			<div class="about__bio">
 				<h2 class="text-secondary">BIO</h2>
-				<p>I am from Ghazipur, Uttar Pradesh and currently live in Bangalore
-					where I am working as a Full-stack Developer at Edmingle.
-					I have 14+ months of experience with PHP, Vue Js, Javascipt, ES6, HTML5, Sass.
-					In my spare time, I listen musics and play cricket.
-				</p>
+				<p>{{personalInfo.bio}}</p>
 			</div>
 		</div>
 		<div class="jobs">
-			<h2>Education</h2>
-			<div class="jobs__job">
-				<h2 class="text-secondary">Master of Computer Applicatons (MCA)</h2>
-				<h3>Banaras Hindu University</h3>
-				<h6>2016-19</h6>
+			<h2>Jobs Experience</h2>
+			<div class="jobs__job" v-for="(job, i) in workInfo.job_experiances" :key="i">
+				<div>
+					<h2 class="inline"> <span class="text-secondary">{{job.company_name}}</span><span class="inline"> / </span></h2> <h3 class="inline">{{job.role}}</h3>
+				</div>
+				<h3>{{dateOfJoin(job)}} - {{dateOfLeave(job)}}</h3>
+				<p class="mb-2">{{job.description}}</p>
+				<div v-for="(sdesc, j) in job.sub_desc" :key="j">
+					<h4 class="mt-1 ms-1"><span class="text-secondary">{{sdesc.heading}} </span> <span v-if="sdesc.sub_heading">({{sdesc.sub_heading}})</span></h4>
+					<ul class="ms-4">
+						<li :class="k == 0 ? 'mt-1' : ''" v-for="(list, k) in sdesc.bullet_points" :key="k">{{list}}</li>
+					</ul>
+				</div>
 			</div>
+		</div>
+		<div class="jobs">
 			<h2>Skills</h2>
-			<div class="jobs__job">
+			<div class="jobs__job remove_ul">
 				<ul>
-					<li><span class="text-color"><b>Programming Language :</b></span> C, PHP, Java, Nodejs, JavaScript, ES6, HTML5, CSS3 and Sass</li>
-					<li><span class="text-color"><b>Operating Systems :</b></span> Linux & Windows</li>
-					<li><span class="text-color"><b>Database :</b></span> MySQL</li>
-					<li><span class="text-color"><b>Frameworks and tools :</b></span> IntelliJ IDEA, ,Vue Js, React Js, VS Code, Chrome and Vue development Tools </li>
-					<li><span class="text-color"><b>Others :</b></span> Git & AWS</li>
+					<li v-for="(skillList, skillIndex) in  skills" :key="skillIndex"><span class="text-color"><b>{{skillList.field}} :</b></span> <span>{{skillList.skills}}</span></li>
 				</ul>
 			</div>
-			<h2>Jobs & Interns</h2>
+			<h2>Education</h2>
 			<div class="jobs__job">
-				<h2 class="text-secondary">Dec 5 2019- Curent</h2>
-				<h3>Edmingle</h3>
-				<h4>Full Stack Developer</h4>
-				<p>Working as a full stack Developer in a Project where
-					the goal is to dilivered good quality products to our customers.</p>
-			</div>
-			<div class="jobs__job">
-				<h2 class="text-secondary">Aug 10 2019- Dec 4 2019</h2>
-				<h3>Redyhire</h3>
-				<h4>Front-End Developer (intern)</h4>
-				<p>Working as a Frontend Developer in a Project where the mission is to simplify end to end recruitment
-					process. The only goal is to reduce amount of effort, time and cost from hiring Process.</p>
+				<div v-for="(education, educationIndex) in  educations" :key="educationIndex">
+					<h2 class="text-secondary"><span>{{education.program_name}}</span> <span>({{education.program_sub_name}})</span></h2>
+					<h3><span>{{education.college_name}}</span> <span v-if="education.college_sub_name">({{education.college_sub_name}})</span></h3>
+					<h6>{{dateOfJoin(education)}}</h6>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -49,8 +44,26 @@
 <script>
 export default {
 	name: 'MyDetails',
+	props: ["personalInfo", "workInfo", "skills", "educations"],
 	created() {
 		this.$emit('setVertical', true)
+		this.MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+	},
+	methods: {
+		dateOfJoin(obj) {
+			return obj.date_of_join === "" ? "Not started" : this.getMonthYear(obj.date_of_join)
+		},
+		dateOfLeave(obj) {
+			return obj.date_of_leave === "" ? "Current" : this.getMonthYear(obj.date_of_leave)
+		},
+		// getExperience(date) {
+		// 	const year = new Date().getYear() - new Date(date).getYear();
+		// 	return year > 1 ? year + " years" :  year + " year"
+		// },
+		getMonthYear(date) {
+			return this.MONTHS[new Date(date).getMonth()] +" "+ new Date(date).getFullYear()
+		},
 	}
 }
 </script>

@@ -1,0 +1,119 @@
+{
+	"other_info": {
+		"copyright_year": "2022"
+	},
+	"personal_info": {
+		"first_name": "Rohit",
+		"last_name": "Kumar",
+		"dob": "",
+		"sex": "male",
+		"contact_number": "+919557845833",
+		"email": "rohitq50@gmail.com",
+		"address": "Bangalore, Karnataka, India",
+		"bio": "My name is Rohit Kumar and I am a Software Engineer II for Ascorb Technology Pvt Ltd. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at my company. I post graduated from the Banaras Hindu University in 2019 with a Masters's Degree in Master of Computer Applications. While in college, I was a member of Coordinating Team in “National Conference on Digital Transformations in Higher Education Institution, BHU (2018)”"
+
+	},
+	"education_info": [
+		{
+			"college_name": "Banaras Hindu University",
+			"college_sub_name": "",
+			"program_name": "Master of Computer Applicatons",
+			"program_sub_name": "MCA",
+			"date_of_join": "04-07-2016",
+			"date_of_leave": "30-06-2019",
+			"is_active": "0",
+			"address": ""
+		}
+	],
+	"project_info": {
+
+	},
+	"skill_info": [
+		{
+			"field": "Programming skills",
+			"skills": "C, PHP, Java, Nodejs, JavaScript, Unit Testing, Debugging, OOPS, Shell Script, Data structure, Algorithms HTML, Bootstrap, CSS and Sass"
+		},
+		{
+			"field": "Operating Systems",
+			"skills": "Linux, Windows"
+		},
+		{
+			"field": "Database",
+			"skills": "MySQL, Redis"
+		},
+		{
+			"field": "Frameworks",
+			"skills": "VueJs, ReactJs, EmberJs"
+		},
+		{
+			"field": "Tools",
+			"skills": "VS Code, Chrome and Vue development Tools"
+		},
+		{
+			"field": "Others",
+			"skills": "Git, Docker, AWS"
+		}
+	],
+	"work_info": {
+		"designation": "Software Engeneer II",
+		"first_join_date": "04-09-2019",
+		"job_experiances": [
+			{
+				"company_name": "ASCORB TECHNOLOGY PRIVATE LIMITED",
+				"positon": "Permanent",
+				"role": "Full Stack Developer",
+				"date_of_join": "04-12-2019",
+				"date_of_leave": "",
+				"is_current_company": "1",
+				"description": "Experience in SDLC(Software development Life Cycle), from code implementation, testing and agile practices. The company has two major products:",
+				"sub_desc": [
+					{
+						"heading": "EDMINGLE",
+						"sub_heading": "LMS",
+						"bullet_points": [
+							"Delivered new pages using EmberJs framework.",
+							"Responsible for creating Rest API for different backend functionalities using PHP.",
+							"Fixed bugs and problems across the entire codebase in an efficient, timely manner.",
+							"Upgraded system with the international selling features.",
+							"Collaboration with Product team and Business team for integration and workflow details."
+						]
+					},
+					{
+						"heading": "TOPLEARNR",
+						"sub_heading": "LMS",
+						"bullet_points": [
+							"Upgraded Existing System into SPA using Vuejs framework.",
+							"Upgraded existing backend using advanced technologies like PHP 7+.",
+							"Designed and implemented unit tests to verify the functionality of user interfaces, backend processing, connectivity, relational database interactions.",
+							"Responsible for creating microservers for the PDF Print server, Api proxy server, Mysql proxy server using NodeJs.",
+							"Upgraded ADMIN MANAGEMENT PORTAL.",
+							"Responsible for creating ADMIN SERVER.",
+							"Responsible for creating Question ingestester using PHP.",
+							"Fixed bugs and problems across the entire codebase in an efficient, timely manner."
+						]
+					}
+				]
+			},
+			{
+				"company_name": "Redyhire",
+				"positon": "Internship",
+				"role": "Front-End Developer",
+				"date_of_join": "04-09-2019",
+				"date_of_leave": "03-12-2019",
+				"is_current_company": "0",
+				"description": "The project where the mission is to simplify the end-to-end recruitment process. The only goal is to reduce the amount of effort, time, and cost of the hiring process.",
+				"sub_desc": [
+					{
+						"heading": "",
+						"sub_heading": "",
+						"bullet_points": [
+							"Experience in redyhire on SDLC, from code implementation, testing and agile practices.",
+							"Delivered components of Question creation and invite pages with reusable components using ReactJs.",
+							"3 Months of work experience in modern framework ReactJs."
+						]
+					}
+				]
+			}
+		]
+	}
+}

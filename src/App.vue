@@ -26,17 +26,8 @@ export default {
 			//set here the initial value for new routes
         	this.vertical = false
     	}
-	} ,
-	methods: {
 	}
 }
-	// import { defineComponent } from '@vue/composition-api'
-
-	// export default defineComponent({
-	//   setup() {
-
-	//   },
-	// })
 </script>
 
 

@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-
+import MyInfo from './static/myinfo.json'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
@@ -17,4 +17,6 @@ import '../src/scss/main.scss'
 // createApp.use(BootstrapVue)
 // createApp.use(IconsPlugin)
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App).use(router)
+app.provide('myInfo', MyInfo);  // Providing to all components during app creation
+app.mount('#app')
